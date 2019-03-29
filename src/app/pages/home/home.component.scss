@@ -90,6 +90,12 @@
                         }
 
                         .all-cat {
+
+                            &:hover {
+                                background-color: #cbf7ee;
+                                cursor: pointer;
+                            }
+
                             .cat-list-icon {
                                 padding: 0 16px;
                                 margin: 0;
@@ -114,6 +120,11 @@
                                 line-height: 48px;
                                 text-decoration: none;
                                 color: rgba(0,47,52,.64);
+                                cursor: pointer;
+                            }
+
+                            &:hover > .cat-list-icon, &:hover > .cat-list-name {
+                                color: #002f34;
                             }
                         }
 
@@ -124,6 +135,11 @@
 
                             .nested-option {
                                 display: flex;
+
+                                &:hover {
+                                    background-color: #cbf7ee;
+                                    cursor: pointer;
+                                }
 
                                 .nested-option-left {
                                     display: flex;
@@ -145,6 +161,10 @@
                                             position: relative;
                                             top: 4px;
                                         }
+
+                                        &:hover {
+                                            color: #002f34;
+                                        }
                                     }
 
                                     a {
@@ -160,6 +180,10 @@
                                         text-decoration: none;
                                         color: rgba(0, 47, 57, .64);
                                         background: transparent;
+
+                                        &:hover {
+                                            color: #002f34;
+                                        }
                                     }
                                 }
 
@@ -183,6 +207,7 @@
                                     
                                     .opt {
 
+
                                         a {
                                             overflow: hidden;
                                             color: rgba(0, 47, 57, .64);
@@ -193,6 +218,12 @@
                                             line-height: 48px;
                                             text-decoration: none;
                                             background: transparent;
+
+                                            &:hover, &:hover > span {
+                                                background-color: #cbf7ee;
+                                                cursor: pointer;
+                                                color: #002f34 !important;
+                                            }
 
                                             span {
                                                 white-space: nowrap;
@@ -349,6 +380,7 @@ main {
                                             height: 100%;
                                             box-sizing: border-box;
                                             text-decoration: none;
+                                            cursor: pointer;
 
                                             .cat-name-icon {
                                                 color: #002f34;
@@ -398,6 +430,10 @@ main {
                                                     font-size: 14px;
                                                     color: rgba(0, 47, 57, .64);
                                                     background: transparent;
+
+                                                    &:hover {
+                                                        color: #002f34;
+                                                    }
                                                 }
                                             }
                                         }

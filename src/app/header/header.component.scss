@@ -133,6 +133,112 @@ header {
                                         position: relative;
                                     }
                                 }
+
+                                .location-3 {
+                                    .location-3-inner {
+                                        height: 320px;
+                                        overflow-y: auto;
+                                        background: #fff;
+                                        width: 272px;
+                                        box-shadow: 0 0 6px 0 rgba(0, 0, 0, .12), 0 6px 6px 0 rgba(0, 0, 0, .24);
+                                        position: relative;
+
+                                        .current-location {
+                                            display: flex;
+                                            flex-direction: column;
+                                            border-bottom: 1px solid rgba(0, 47, 52, .2);
+
+                                            .current-location-inner {
+                                                display: flex;
+                                                align-items: center;
+                                                height: 48px;
+                                                cursor: pointer;
+                                                padding: 8px 8px 8px 16px;
+                                                box-sizing: border-box;
+                                            }
+
+                                            .current-location-icon {
+                                                margin-right: 20px;
+                                                color: rgba(0,47,52,.64);
+                                                cursor: pointer;
+
+                                                svg {
+                                                    width: 20px;
+                                                    height: 20px;
+                                                    position: relative;
+                                                    top: 2px;
+                                                }
+                                            }
+
+                                            .current-location-name {
+                                                overflow: hidden;
+                                                text-overflow: ellipsis;
+                                                white-space: nowrap;
+
+                                                span {
+                                                    color: #002f34;
+                                                    font-size: 14px;
+                                                }
+                                            }
+                                        }
+
+                                        .popular-location {
+                                            display: flex;
+                                            flex-direction: column;
+
+                                            .pl-header {
+                                                display: flex;
+                                                align-items: center;
+                                                height: 48px;
+                                                padding: 8px 8px 8px 16px;
+                                                box-sizing: border-box;
+
+                                                span {
+                                                    color: rgba(0,47,52,.64);
+                                                    font-size: 12px;
+                                                    text-transform: uppercase; 
+                                                }
+
+                                            }
+
+                                            .pl-body {
+                                                .pl-body-list {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    height: 48px;
+                                                    cursor: pointer;
+                                                    padding: 8px 8px 8px 16px;
+                                                    box-sizing: border-box;
+
+                                                    .pl-list-icon {
+                                                        margin-right: 20px;
+                                                        color: rgba(0,47,52,.64);
+
+                                                        svg {
+                                                            width: 20px;
+                                                            height: 20px;
+                                                            position: relative;
+                                                            top: 2px;
+                                                        }
+                                                    }
+
+                                                    .pl-list-name {
+                                                        overflow: hidden;
+                                                        text-overflow: ellipsis;
+                                                        white-space: nowrap;
+
+                                                        span {
+                                                            color: #002f34;
+                                                            font-size: 14px;
+
+                                                            
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
 
