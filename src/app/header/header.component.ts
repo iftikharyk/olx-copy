@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  openLocation = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleLocation() {
+    this.openLocation = !this.openLocation;
   }
 
 }

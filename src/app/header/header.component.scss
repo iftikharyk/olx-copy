@@ -135,6 +135,7 @@ header {
                                 }
 
                                 .location-3 {
+                                    transition: transform .5s;
                                     .location-3-inner {
                                         height: 320px;
                                         overflow-y: auto;
@@ -380,5 +381,13 @@ header {
                 }
             }
         }
+    }
+
+    .show-loc {
+        display: block;
+    }
+
+    .hide-loc {
+        display: none;
     }
 }
