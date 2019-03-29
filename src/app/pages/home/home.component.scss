@@ -221,6 +221,14 @@
     }
 }
 
+.hide-cat {
+    display: none;
+}
+
+.show-cat {
+    display: block;
+}
+
 main {
     flex: 1;
     padding-bottom: 0;

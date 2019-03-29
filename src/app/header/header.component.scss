@@ -119,6 +119,19 @@ header {
                                         background: #fff;
                                         padding: 0 0 0 16px;
                                     }
+
+                                    .down-icon {
+                                        height: 40px;
+                                        width: 40px;
+                                        display: inline-flex;
+                                        cursor: pointer;
+                                        justify-content: center;
+                                        align-items: center;
+                                        box-sizing: border-box;
+                                        color: #002f34;
+                                        transition: transform .5s;
+                                        position: relative;
+                                    }
                                 }
                             }
                         }
@@ -187,6 +200,19 @@ header {
                                         }
                                     }
                                 }
+                            }
+                        }
+
+                        .search-button {
+                            min-width: 48px;
+                            height: 48px;
+                            display: flex;
+                            cursor: pointer;
+                            background: #2a65ea;
+
+                            .search-icon {
+                                margin: auto;
+                                color: #fff;
                             }
                         }
                     }

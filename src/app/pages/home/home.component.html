@@ -9,7 +9,7 @@
           <i class="fas fa-angle-down"></i>
         </span>
       </div>
-      <ul class="cat-list" *ngIf="show">
+      <ul class="cat-list" [ngClass]="status ? 'show-cat' : 'hide-cat'">
         <li>
           <div class="content">
             <div class="all-cat">
@@ -114,6 +114,7 @@
             </div>
             <div class="cat-boxes">
               <ul class="cat-box-container">
+                <!-- Mobiles -->
                 <li class="cat-box">
                   <div class="cat-box-header">
                     <a class="cat-name-link">
@@ -137,163 +138,191 @@
                     </ul>
                   </div>
                 </li>
+                <!-- Vehicles -->
                 <li class="cat-box">
                   <div class="cat-box-header">
                     <a class="cat-name-link">
                       <span class="cat-name-icon">
-                        <i class="fas fa-mobile"></i>
+                        <i class="fas fa-car"></i>
                       </span>
-                      <span class="cat-name">Mobiles</span>
+                      <span class="cat-name">Vehicles</span>
                     </a>
                   </div>
                   <div class="cat-box-body">
                     <ul class="cat-box-body-list-container">
                       <li class="cat-box-body-list">
-                        <a>Tablets</a>
+                        <a>Cars</a>
                       </li>
                       <li class="cat-box-body-list">
-                        <a>Tablets</a>
+                        <a>Cars Accessories</a>
                       </li>
                       <li class="cat-box-body-list">
-                        <a>Tablets</a>
+                        <a>Spare Parts</a>
+                      </li>
+                      <li class="cat-box-body-list">
+                        <a>Buses, Vans & Trucks</a>
                       </li>
                     </ul>
                   </div>
                 </li>
+                <!-- Property For Sale -->
                 <li class="cat-box">
                   <div class="cat-box-header">
                     <a class="cat-name-link">
                       <span class="cat-name-icon">
-                        <i class="fas fa-mobile"></i>
+                        <i class="fas fa-sign"></i>
                       </span>
-                      <span class="cat-name">Mobiles</span>
+                      <span class="cat-name">Property For Sale</span>
                     </a>
                   </div>
                   <div class="cat-box-body">
                     <ul class="cat-box-body-list-container">
                       <li class="cat-box-body-list">
-                        <a>Tablets</a>
+                        <a>Land & Plots</a>
                       </li>
                       <li class="cat-box-body-list">
-                        <a>Tablets</a>
+                        <a>Houses</a>
                       </li>
                       <li class="cat-box-body-list">
-                        <a>Tablets</a>
+                        <a>Apartments & Flats</a>
+                      </li>
+                      <li class="cat-box-body-list">
+                        <a>Shops - Offices - Commercials Space</a>
                       </li>
                     </ul>
                   </div>
                 </li>
+                <!-- Property For Rent -->
                 <li class="cat-box">
                   <div class="cat-box-header">
                     <a class="cat-name-link">
                       <span class="cat-name-icon">
-                        <i class="fas fa-mobile"></i>
+                        <i class="fas fa-sign"></i>
                       </span>
-                      <span class="cat-name">Mobiles</span>
+                      <span class="cat-name">Property For Rent</span>
                     </a>
                   </div>
                   <div class="cat-box-body">
                     <ul class="cat-box-body-list-container">
                       <li class="cat-box-body-list">
-                        <a>Tablets</a>
+                        <a>Houses</a>
                       </li>
                       <li class="cat-box-body-list">
-                        <a>Tablets</a>
+                        <a>Apartments & Flats</a>
                       </li>
                       <li class="cat-box-body-list">
-                        <a>Tablets</a>
+                        <a>Portions & Floors</a>
+                      </li>
+                      <li class="cat-box-body-list">
+                        <a>Shops - Offices - Commercial Space</a>
                       </li>
                     </ul>
                   </div>
                 </li>
+                <!-- Electronics -->
                 <li class="cat-box">
                   <div class="cat-box-header">
                     <a class="cat-name-link">
                       <span class="cat-name-icon">
-                        <i class="fas fa-mobile"></i>
+                        <i class="fas fa-tv"></i>
                       </span>
-                      <span class="cat-name">Mobiles</span>
+                      <span class="cat-name">Electronics & Home Appliances</span>
                     </a>
                   </div>
                   <div class="cat-box-body">
                     <ul class="cat-box-body-list-container">
                       <li class="cat-box-body-list">
-                        <a>Tablets</a>
+                        <a>Computers & Accessories</a>
                       </li>
                       <li class="cat-box-body-list">
-                        <a>Tablets</a>
+                        <a>TV - Video - Audio</a>
                       </li>
                       <li class="cat-box-body-list">
-                        <a>Tablets</a>
+                        <a>Camera & Accessories</a>
+                      </li>
+                      <li class="cat-box-body-list">
+                        <a>Games & Entertainment</a>
                       </li>
                     </ul>
                   </div>
                 </li>
+                <!-- Bikes -->
                 <li class="cat-box">
                   <div class="cat-box-header">
                     <a class="cat-name-link">
                       <span class="cat-name-icon">
-                        <i class="fas fa-mobile"></i>
+                        <i class="fas fa-motorcycle"></i>
                       </span>
-                      <span class="cat-name">Mobiles</span>
+                      <span class="cat-name">Bikes</span>
                     </a>
                   </div>
                   <div class="cat-box-body">
                     <ul class="cat-box-body-list-container">
                       <li class="cat-box-body-list">
-                        <a>Tablets</a>
+                        <a>Motorcycle</a>
                       </li>
                       <li class="cat-box-body-list">
-                        <a>Tablets</a>
+                        <a>Spare Parts</a>
                       </li>
                       <li class="cat-box-body-list">
-                        <a>Tablets</a>
+                        <a>Bicycles</a>
+                      </li>
+                      <li class="cat-box-body-list">
+                        <a>ATV & Quads</a>
                       </li>
                     </ul>
                   </div>
                 </li>
+                <!-- Business -->
                 <li class="cat-box">
                   <div class="cat-box-header">
                     <a class="cat-name-link">
                       <span class="cat-name-icon">
-                        <i class="fas fa-mobile"></i>
+                        <i class="fas fa-industry"></i>
                       </span>
-                      <span class="cat-name">Mobiles</span>
+                      <span class="cat-name">Business, Industiral & Agriculture</span>
                     </a>
                   </div>
                   <div class="cat-box-body">
                     <ul class="cat-box-body-list-container">
                       <li class="cat-box-body-list">
-                        <a>Tablets</a>
+                        <a>Business for Sale</a>
                       </li>
                       <li class="cat-box-body-list">
-                        <a>Tablets</a>
+                        <a>Food & Resturants</a>
                       </li>
                       <li class="cat-box-body-list">
-                        <a>Tablets</a>
+                        <a>Trade & Industiral</a>
+                      </li>
+                      <li class="cat-box-body-list">
+                        <a>Construction & Heavy Machinery</a>
                       </li>
                     </ul>
                   </div>
                 </li>
+                <!-- Services -->
                 <li class="cat-box">
                   <div class="cat-box-header">
                     <a class="cat-name-link">
                       <span class="cat-name-icon">
-                        <i class="fas fa-mobile"></i>
+                        <i class="fas fa-key"></i>
                       </span>
-                      <span class="cat-name">Mobiles</span>
+                      <span class="cat-name">Services</span>
                     </a>
                   </div>
                   <div class="cat-box-body">
                     <ul class="cat-box-body-list-container">
                       <li class="cat-box-body-list">
-                        <a>Tablets</a>
+                        <a>Education & Classes</a>
                       </li>
                       <li class="cat-box-body-list">
-                        <a>Tablets</a>
+                        <a>Travel & Visa</a>
                       </li>
                       <li class="cat-box-body-list">
-                        <a>Tablets</a>
+                        <a>Car Rental</a>
+                      </li>
+                      <li class="cat-box-body-list">
+                        <a>Drivers & Taxi</a>
                       </li>
                     </ul>
                   </div>
